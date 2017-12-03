@@ -9,10 +9,9 @@
     };
 
     ext.get_source = function(URL, callback) {
-        // Make an AJAX call to the Open Weather Maps API
+        // Make an AJAX call to the URL
         $.ajax({
               url: URL,
-              dataType: 'jsonp',
               success: function( data ) {
                   //Call it back **RAW**
                   callback(data);

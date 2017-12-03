@@ -8,7 +8,7 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.get_temp = function(URL, callback) {
+    ext.get_source = function(URL, callback) {
         // Make an AJAX call to the Open Weather Maps API
         $.ajax({
               url: URL,
@@ -23,7 +23,7 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['R', 'source for %s', 'get_temp', 'Boston, MA'],
+            ['R', 'source for %s', 'get_source', 'google.com'],
         ]
     };
 
